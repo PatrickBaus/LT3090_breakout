@@ -1,0 +1,278 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Linear Technology
+LIBS:net-tie
+LIBS:LT3090_breakout-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 J1
+U 1 1 598944A2
+P 2000 2800
+F 0 "J1" H 2078 2841 50  0000 L CNN
+F 1 "CONN_01X03" H 2078 2750 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 2000 2800 50  0001 C CNN
+F 3 "" H 2000 2800 50  0001 C CNN
+	1    2000 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5989455D
+P 2600 2450
+F 0 "#PWR01" H 2600 2200 50  0001 C CNN
+F 1 "GND" H 2605 2277 50  0000 C CNN
+F 2 "" H 2600 2450 50  0001 C CNN
+F 3 "" H 2600 2450 50  0001 C CNN
+	1    2600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2400 2600 2400
+Wire Wire Line
+	2600 2400 2600 2450
+Wire Wire Line
+	4200 2900 4300 2900
+$Comp
+L R R1
+U 1 1 5989486E
+P 4850 3700
+F 0 "R1" H 4920 3746 50  0000 L CNN
+F 1 "10k" H 4920 3655 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 4780 3700 50  0001 C CNN
+F 3 "" H 4850 3700 50  0001 C CNN
+	1    4850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 598949D4
+P 5050 3950
+F 0 "#PWR02" H 5050 3700 50  0001 C CNN
+F 1 "GND" H 5055 3777 50  0000 C CNN
+F 2 "" H 5050 3950 50  0001 C CNN
+F 3 "" H 5050 3950 50  0001 C CNN
+	1    5050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 598949E9
+P 5250 3700
+F 0 "R2" H 5320 3746 50  0000 L CNN
+F 1 "243k" H 5320 3655 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 5180 3700 50  0001 C CNN
+F 3 "" H 5250 3700 50  0001 C CNN
+	1    5250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 59894B59
+P 6500 2950
+F 0 "C3" H 6615 2996 50  0000 L CNN
+F 1 "10u" H 6615 2905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6538 2800 50  0001 C CNN
+F 3 "" H 6500 2950 50  0001 C CNN
+F 4 "Murata" H 6500 2950 60  0001 C CNN "MFN"
+F 5 "GRM188R6YA106MA73D" H 6500 2950 60  0001 C CNN "MFP"
+F 6 "GRM188R6YA475KE15D" H 6500 2950 60  0001 C CNN "Alternative"
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2700 8050 2700
+Wire Wire Line
+	6500 2700 6500 2800
+Wire Wire Line
+	5800 2900 6000 2900
+$Comp
+L GND #PWR03
+U 1 1 59894DDD
+P 6500 3150
+F 0 "#PWR03" H 6500 2900 50  0001 C CNN
+F 1 "GND" H 6505 2977 50  0000 C CNN
+F 2 "" H 6500 3150 50  0001 C CNN
+F 3 "" H 6500 3150 50  0001 C CNN
+	1    6500 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 2700
+Wire Wire Line
+	6500 3100 6500 3150
+$Comp
+L C C1
+U 1 1 59894F2E
+P 3150 2950
+F 0 "C1" H 3265 2996 50  0000 L CNN
+F 1 "10u" H 3265 2905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3188 2800 50  0001 C CNN
+F 3 "" H 3150 2950 50  0001 C CNN
+F 4 "Murata" H 3150 2950 60  0001 C CNN "MFN"
+F 5 "GRM188R6YA106MA73D" H 3150 2950 60  0001 C CNN "MFP"
+F 6 "GRM188R6YA475KE15D" H 3150 2950 60  0001 C CNN "Alternative"
+	1    3150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 59894F82
+P 3150 3150
+F 0 "#PWR04" H 3150 2900 50  0001 C CNN
+F 1 "GND" H 3155 2977 50  0000 C CNN
+F 2 "" H 3150 3150 50  0001 C CNN
+F 3 "" H 3150 3150 50  0001 C CNN
+	1    3150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3150 3150 3100
+Wire Wire Line
+	3150 2800 3150 2700
+Connection ~ 3150 2700
+$Comp
+L C C2
+U 1 1 59895DC4
+P 5650 3700
+F 0 "C2" H 5765 3746 50  0000 L CNN
+F 1 "100n" H 5765 3655 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5688 3550 50  0001 C CNN
+F 3 "" H 5650 3700 50  0001 C CNN
+F 4 "Murata" H 5650 3700 60  0001 C CNN "MFN"
+	1    5650 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2900 2400 2900
+Wire Wire Line
+	2400 2900 2400 4250
+Wire Wire Line
+	2400 4250 8050 4250
+Wire Wire Line
+	8050 4250 8050 2700
+Text Label 8050 2700 0    60   ~ 0
+out
+$Comp
+L LT3090EDD U1
+U 1 1 598E5B14
+P 5050 2900
+F 0 "U1" H 5050 3437 60  0000 C CNN
+F 1 "LT3090EDD" H 5050 3331 60  0000 C CNN
+F 2 "Housings_DFN_QFN:DFN-10-1EP_3x3mm_Pitch0.5mm" H 5050 3500 60  0001 C CNN
+F 3 "" H 5050 3350 60  0001 C CNN
+F 4 "Linear Technology" H 5800 2650 60  0001 C CNN "MFN"
+F 5 "LT3090EDD" H 5650 2500 60  0001 C CNN "MFP"
+	1    5050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2050 4200 4000
+Connection ~ 4200 2700
+Wire Wire Line
+	6000 2900 6000 2050
+Wire Wire Line
+	6000 2050 4200 2050
+$Comp
+L GND #PWR05
+U 1 1 59929ED0
+P 6000 3250
+F 0 "#PWR05" H 6000 3000 50  0001 C CNN
+F 1 "GND" H 6005 3077 50  0000 C CNN
+F 2 "" H 6000 3250 50  0001 C CNN
+F 3 "" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3100 6000 3100
+Wire Wire Line
+	6000 3100 6000 3250
+$Comp
+L GND #PWR06
+U 1 1 5992A3D4
+P 5250 3950
+F 0 "#PWR06" H 5250 3700 50  0001 C CNN
+F 1 "GND" H 5255 3777 50  0000 C CNN
+F 2 "" H 5250 3950 50  0001 C CNN
+F 3 "" H 5250 3950 50  0001 C CNN
+	1    5250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3850 5250 3950
+Wire Wire Line
+	5250 3450 5250 3550
+Wire Wire Line
+	5250 3900 5650 3900
+Wire Wire Line
+	5650 3900 5650 3850
+Connection ~ 5250 3900
+Wire Wire Line
+	5650 3550 5650 3500
+Wire Wire Line
+	5650 3500 5250 3500
+Connection ~ 5250 3500
+Wire Wire Line
+	5050 3450 5050 3950
+Wire Wire Line
+	4850 3450 4850 3550
+Wire Wire Line
+	4200 4000 4850 4000
+Wire Wire Line
+	4850 4000 4850 3850
+Connection ~ 4200 2900
+Text Notes 3050 3800 0    60   ~ 0
+I_lim = 10 kΩ / R * A
+Text Notes 6150 3700 0    60   ~ 0
+V_out = 50 µA * R
+Wire Wire Line
+	2200 2800 2950 2800
+Wire Wire Line
+	2950 2800 2950 2700
+Wire Wire Line
+	2950 2700 4300 2700
+Wire Wire Line
+	2200 2700 2250 2700
+Wire Wire Line
+	2250 2700 2250 2400
+$EndSCHEMATC
